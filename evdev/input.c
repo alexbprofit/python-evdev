@@ -20,6 +20,9 @@
 
 #ifdef __FreeBSD__
 #include <dev/evdev/input.h>
+#ifdef Windows
+#include <io.h>
+#endif
 #else
 #include <linux/input.h>
 #endif
